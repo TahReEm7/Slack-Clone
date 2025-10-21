@@ -18,9 +18,9 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: 'Slack Clone',
   description: 'A clone of Slack built with Next.js and Mantine',
-  // icons: {
-  //   icon: '',
-  // },
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
