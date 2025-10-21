@@ -1,18 +1,19 @@
 import {
+  Box,
   ColorSchemeScript,
   mantineHtmlProps,
   MantineProvider,
 } from '@mantine/core';
 import '@mantine/core/styles.css';
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
-
+import { Lato } from 'next/font/google';
 import './globals.css';
+import { Footer, Navbar } from '@/layouts';
 
-const roboto = Roboto({
+const lato = Lato({
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-roboto',
+  weight: ['100', '300', '400', '700', '900'],
+  variable: '--font-lato',
 });
 
 export const metadata: Metadata = {
@@ -33,12 +34,15 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript forceColorScheme="light" />
       </head>
-      <body className={`${roboto.variable} font-sans antialiased`}>
+      <body className={`${lato.variable} font-sans antialiased`}>
         <MantineProvider>
+          <Box>
+            <Navbar />
             {children}
+            <Footer />
+          </Box>
         </MantineProvider>
       </body>
     </html>
   );
 }
-

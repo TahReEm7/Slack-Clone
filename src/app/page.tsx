@@ -1,13 +1,12 @@
-import { Button } from "@mantine/core";
+import { Box, Button } from "@mantine/core";
 
 import Link from "next/link";
+import HomePage from "./(main)/page";
 
 export default function Home() {
   return (
-   <div className="bg-gray-700 h-screen">
-     <Button component={Link} href="/">
-      Next link button
-    </Button>
-   </div>
+    <Box>
+      <HomePage />
+    </Box>
   );
 }
