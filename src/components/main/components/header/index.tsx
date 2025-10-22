@@ -8,7 +8,7 @@ function MainHead() {
       <h1 className='text-5xl text-center font-bold'>Bring your people, projects, apps, 
         <br /> and AI agents together.</h1>
 
-        <section className='flex items-center justify-center gap-6 '>
+        <section className='md:flex items-center justify-center gap-6 hidden'>
            <div className='flex items-center justify-center gap-2 font-semibold'>
               <IconConfetti size={24} stroke={1.5} />
               <Text>
