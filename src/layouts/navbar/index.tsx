@@ -42,6 +42,7 @@ export default function Navbar() {
       {/* Left side: Logo + Nav Links */}
       <div className="flex flex-row gap-6 items-center">
         {/* Logo */}
+      <Link href={"/"}>
         <Group gap="1px">
           <Image src="/logo.png" alt="Slack Logo" width={40} height={40} />
           <Box>
@@ -53,6 +54,7 @@ export default function Navbar() {
             </Text>
           </Box>
         </Group>
+      </Link>
 
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex items-center gap-6">

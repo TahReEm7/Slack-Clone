@@ -1,8 +1,11 @@
+import { Home } from '@/components'
 import React from 'react'
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div>
+      <Home/>
+    </div>
   )
 }
 
