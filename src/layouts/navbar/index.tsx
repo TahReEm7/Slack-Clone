@@ -38,7 +38,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="max-w-7xl mx-auto flex items-center justify-between py-6 px-4 md:px-0">
+    <nav className="max-w-7xl mx-auto flex mt-2 rounded-full bg-white  sticky top-4 z-10000  left-0 items-center justify-between py-6 px-4 md:px-8">
       {/* Left side: Logo + Nav Links */}
       <div className="flex flex-row gap-6 items-center">
         {/* Logo */}
