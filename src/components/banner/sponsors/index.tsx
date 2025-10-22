@@ -3,7 +3,7 @@ import React from "react";
 
 function SponsorCard() {
   return (
-    <section className="max-w-7xl mx-auto flex justify-center py-8 gap-18">
+    <section className="max-w-7xl mx-auto flex justify-center py-8 md:gap-24 gap-2">
       <Image
         src="/sponsors/1.png" 
         alt="Sponsor Logo"
