@@ -1,6 +1,7 @@
 "use client";
 
-import { IconFileArrowRight } from "@tabler/icons-react";
+
+import { IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -33,7 +34,7 @@ function BannerIntro() {
           {/* Left word */}
           <motion.span
             animate={{
-              x: isAnimating ? -80 : 0,
+              x: isAnimating ? -60 : 0,
             }}
             transition={{
               duration: 0.6,
@@ -52,7 +53,7 @@ function BannerIntro() {
                   initial={{ y: 50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -50, opacity: 0 }}
-                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  transition={{ duration: 0.2, ease: "easeIn" }}
                   className="inline-block"
                 >
                   {words[index]}
@@ -64,7 +65,7 @@ function BannerIntro() {
           {/* Right word */}
           <motion.span
             animate={{
-              x: isAnimating ? 80 : 0,
+              x: isAnimating ? 60 : 0,
             }}
             transition={{
               duration: 0.6,
@@ -94,7 +95,7 @@ function BannerIntro() {
           className="bg-white px-6 py-3 rounded-sm text-[#611F69] border-2 border-[#611F69] font-semibold w-full sm:w-auto text-center flex items-center justify-center gap-2 transition-all hover:bg-[#f9f2fa]"
         >
           Find Your Plan
-          <IconFileArrowRight className="inline-block text-[#611F69] text-lg" />
+          <IconArrowRight/>
         </Link>
       </div>
     </section>

@@ -10,7 +10,7 @@ import {
   ActionIcon,
   ScrollArea,
 } from "@mantine/core";
-import { IconChevronDown, IconSearch, IconMenu2, IconX } from "@tabler/icons-react";
+import { IconChevronDown, IconSearch, IconMenu2 } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
