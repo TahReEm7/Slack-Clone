@@ -1,13 +1,18 @@
 import { Box } from '@mantine/core'
 import React from 'react'
 import Banner from '../banner'
-import MainBody from '../main'
+import MainBodyMobile from '../main/components/bodyMobile'
+import { MainBody } from '..'
+
 
 function Home() {
   return (
     <Box>
       <Banner/>
-      <MainBody/>
+     <div className='md:hidden'>
+       <MainBodyMobile/>
+     </div>
+     <MainBody/>
     </Box>
   )
 }

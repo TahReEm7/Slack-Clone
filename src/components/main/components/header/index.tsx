@@ -5,7 +5,7 @@ import {  IconBolt, IconCloud, IconConfetti, IconContract, IconStars } from "@ta
 function MainHead() {
   return (
     <Box className='linear-gradient(to bottom, #F4ECFE, white) pt-10 space-y-8'>
-      <h1 className='text-5xl text-center font-bold'>Bring your people, projects, apps, 
+      <h1 className='md:text-5xl text-2xl text-center font-bold'>Bring your people, projects, apps, 
         <br /> and AI agents together.</h1>
 
         <section className='md:flex items-center justify-center gap-6 hidden'>
